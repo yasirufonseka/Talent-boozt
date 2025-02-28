@@ -1,0 +1,53 @@
+ .one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 50px;
+
+
+ }
+ .two{
+   font-size: 30px;
+
+   b{
+      color: rgb(208,54,255);
+   }
+ }
+ .three {
+   position: relative;
+   width: 300px;
+   height: 300px;
+ }
+ 
+ .pentagon {
+   width: 300px;
+   height: 300px;
+   background: #c52ef5;
+   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+   border-radius: 10rem;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1; /* Lower z-index so it's behind the image */
+ }
+ 
+ .imgdiv {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-60%, -40%); 
+   z-index: 2; 
+ }
+ 
+ .imgdiv img {
+   width: 350px; 
+   height: auto;
+ }
+
+button{
+   padding: 10px 20px;
+   margin: 5px ;
+   border-radius: 18px;
+
+}
