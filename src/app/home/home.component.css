@@ -4,50 +4,161 @@
     align-items: center;
     margin: 20px;
     padding: 50px;
-
-
- }
- .two{
-   font-size: 30px;
-
-   b{
-      color: rgb(208,54,255);
+    .two{
+      font-size: 30px;
+   
+      b{
+         color: rgb(208,54,255);
+      }
+    }
+    .three {
+      position: relative;
+      width: 300px;
+      height: 300px;
+    }
+    
+    .pentagon {
+      width: 300px;
+      height: 300px;
+      background: #c52ef5;
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; /* Lower z-index so it's behind the image */
+    }
+    
+    .imgdiv {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-60%, -40%); 
+      z-index: 2; 
+    }
+    
+    .imgdiv img {
+      width: 350px; 
+      height: auto;
+    }
+   
+   button{
+      padding: 20px 25px;
+     
+      border-radius: 30px;
+   
    }
- }
- .three {
-   position: relative;
-   width: 300px;
-   height: 300px;
- }
- 
- .pentagon {
-   width: 300px;
-   height: 300px;
-   background: #c52ef5;
-   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-   border-radius: 10rem;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: 1; /* Lower z-index so it's behind the image */
- }
- 
- .imgdiv {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-60%, -40%); 
-   z-index: 2; 
- }
- 
- .imgdiv img {
-   width: 350px; 
-   height: auto;
- }
+   .postbtn{
+      border: none;
+      background-color: rgb(238,225,225);
+      color: black; /* Text color */
+     font-weight: 300;
+     font-size: 14px;
+     text-align: center;
+     margin: 5px 20px 0 0  ;
+   }
+   .signupbtn{
+      border: none;
+      background-color: rgb(160,50,205);
+      color: rgb(255, 255, 255); /* Text color */
+      font-weight: 300;
+      font-size: 14px; 
+      text-align: center;
+      margin: 5px 0 0 20px ;
+   }
+   
 
-button{
-   padding: 10px 20px;
-   margin: 5px ;
-   border-radius: 18px;
 
+ }
+ 
+.whychooseus{
+   background-color: #ebc2d0bd;
+   margin: 20px ;
+   border-radius: 20px;
+   
+  
+  
 }
+.topic, .cards {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+   
+  h1{
+    font-size: 3ch;
+    margin: 100px 0 50px 0;
+  }
+ 
+  
+ }
+
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: #000000;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 30%;
+    inset: auto auto 150px 85px;
+    opacity: 1;
+    transition: inset .8s ease-out;
+
+    
+  }
+  &:hover img{
+    inset: auto auto 500px 85px;
+    transition: inset .8s ease-out;
+    
+
+  }
+
+ 
+
+  h3 {
+    position: absolute;
+    inset: auto auto 50px 20px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5cqb;
+    text-transform: uppercase;
+  }
+
+  p {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    inset: auto auto 80px 30px;
+  }
+
+  &:hover h3 {
+    inset: auto auto 220px 20px;
+    transition: inset 0.3s ease-out;
+  }
+
+  &:hover p {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+}
+
