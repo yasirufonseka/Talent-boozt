@@ -20,9 +20,9 @@
     .pentagon {
       width: 300px;
       height: 300px;
-      background: #c52ef5;
+      background: #A726AB;
       clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-      border-radius: 10rem;
+      border-radius: 200px;
       position: absolute;
       top: 0;
       left: 0;
@@ -83,10 +83,10 @@
   display: flex;
   justify-content: center;
   margin: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    
   h1{
-    font-size: 3ch;
+    font-size: 4ch;
     margin: 100px 0 50px 0;
   }
  
@@ -162,3 +162,31 @@
   }
 }
 
+.tustedComapies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 50px;
+
+}
+.companyTopic{
+  display: block;
+  justify-items: center;
+ font-size: larger;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.companylogos{
+  display: flex;
+  margin: 20px;
+  
+  
+
+}
+.logo{
+  width: 100px;
+  
+  margin: 20px;
+  justify-items: center;
+}
