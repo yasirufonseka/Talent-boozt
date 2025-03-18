@@ -43,4 +43,22 @@
       color: #aaa;
     }
   }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stacks sections vertically */
+      align-items: center; /* Centers content */
+      text-align: center; /* Ensures better readability */
+    }
+
+    .footer-section {
+      width: 100%; /* Makes each section take full width */
+      min-width: unset;
+    }
+
+    .email-input {
+      max-width: 300px; /* Prevents input field from stretching too wide */
+      margin: 10px auto;
+    }
+  }
+}
   

@@ -11,4 +11,10 @@ export class NavBarComponent {
   
   navbarImage:string = "assets/top-b.png";
 
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
 }
