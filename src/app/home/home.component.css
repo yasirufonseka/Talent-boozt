@@ -87,7 +87,9 @@
 
  
 .whychooseus{
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
    background-color: #d1cbd483;
    color: #020202;
    margin: 50px ;
@@ -236,7 +238,7 @@
 
   .imgdiv img {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
   }
 
   button {
