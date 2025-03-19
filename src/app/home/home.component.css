@@ -54,7 +54,7 @@
       border: none;
     
    
-  button{
+     button{
       padding:20px;
       border-radius: 25px;
       font-weight: 500;
@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-   background-color: #d1cbd483;
+   background-color: #d5d3d583;
    color: #020202;
    margin: 50px ;
    padding: 50px;
@@ -105,11 +105,13 @@
   justify-content: center;
   margin: 10px;
   font-family: Merriweather, serif;
+  text-align: center;
    
   h1{
     font-size: 4ch;
     margin: 100px 0 50px 0;
   }
+
  
   
  }
@@ -197,7 +199,7 @@
   .postbtn,
   .signupbtn {
     width: 100%;
-    margin: 20px;
+    margin: 10px;
   }
 
   .topic h1 {

@@ -6,6 +6,7 @@
   padding: 10px 20px;
   box-shadow: 0 1px 5px gray;
   position: relative;
+  overflow-y: hidden;
 }
 
 img {
@@ -21,6 +22,7 @@ img {
   gap: clamp(10px, 15px, 20px);
   margin: 10px 20px;
 }
+
 
 
 .nav-links {
@@ -74,7 +76,7 @@ img {
   .menu-toggle {
       display: block;
       font-size: 25px;
-      float: right;
+      justify-items: end;
       cursor: pointer;
       padding: 5px;
   }
