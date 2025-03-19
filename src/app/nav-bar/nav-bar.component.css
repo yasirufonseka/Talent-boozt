@@ -6,7 +6,6 @@
   padding: 10px 20px;
   box-shadow: 0 1px 5px gray;
   position: relative;
-  overflow-y: hidden;
 }
 
 img {
@@ -15,7 +14,7 @@ img {
   object-fit: cover;
 }
 
-
+/* Default nav-links styling */
 .nav-links {
   list-style: none;
   display: flex;
@@ -23,14 +22,13 @@ img {
   margin: 10px 20px;
 }
 
-
-
+/* Hide links by default on small screens */
 .nav-links {
   display: flex;
   flex-direction: row;
 }
 
-
+/* Styling for individual nav items */
 .nav-links li {
   display: inline;
   margin: 10px;
@@ -39,7 +37,7 @@ img {
 .nav-links a {
   text-decoration: none;
   color: black;
-  font-size: clamp(8px , 2rem , 15px);
+  font-size: 15px;
 }
 
 .nav-links a:active {
@@ -53,7 +51,7 @@ img {
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
   .nav-links {
-      display: none;
+      display: none; /* Hide by default */
       flex-direction: column;
       position: absolute;
       top: 60px;
@@ -65,7 +63,7 @@ img {
   }
 
   .nav-links.active {
-      display: flex; 
+      display: flex; /* Show when active */
   }
 
   .nav-links li {
@@ -76,13 +74,12 @@ img {
   .menu-toggle {
       display: block;
       font-size: 25px;
-      justify-items: end;
       cursor: pointer;
-      padding: 5px;
+      padding: 10px;
   }
 }
 
-
+/* Hide hamburger icon on larger screens */
 @media screen and (min-width: 769px) {
   .menu-toggle {
       display: none;

@@ -147,22 +147,7 @@
 }
 
 
-.horzontalline{
-  
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-}
-.wave {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(to right, #00d4ff, transparent);
-  animation: wave-move 5s linear infinite;
-}
+
 
 @keyframes wave-move {
   0% { transform: translateX(-100%); }
@@ -217,14 +202,16 @@
   }
 }
 
+
 @media screen and (max-width: 500px) {
   .banner-section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: auto;
     padding: 15px;
-    margin: 10px;
+    margin: 30px;
   }
 
   .banner-content {
